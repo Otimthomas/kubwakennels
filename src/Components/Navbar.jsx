@@ -1,9 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import styled from "styled-components";
 import { FaBars } from "react-icons/fa";
 import { links } from "../utils/constants";
 import { useAppContext } from "../context/context";
+import Logo from "../assets/logo.png";
 
 function Navbar() {
   const { toggleSidebar } = useAppContext();
@@ -12,8 +13,7 @@ function Navbar() {
       <div className="nav-center">
         <div className="header">
           <Link to="/" className="logo">
-            {/* image component for logo goes here */}
-            <h2>Kubwa-kennels</h2>
+            <img src={Logo} alt="" />
           </Link>
           {/* burger icon goes here */}
           <button className="nav-btn" onClick={toggleSidebar}>
@@ -23,9 +23,16 @@ function Navbar() {
         <ul className="nav-links">
           {links.map((link) => {
             return (
-              <Link key={link.id} to={link.path} className="nav-link">
-                {link.text}
-              </Link>
+              <li key={link.id} className="nav-link">
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "active-link" : "link"
+                  }
+                  to={link.path}
+                >
+                  {link.text}
+                </NavLink>
+              </li>
             );
           })}
         </ul>
@@ -44,33 +51,36 @@ const NavContainer = styled.div`
   .nav-center {
     width: 90vw;
     margin: 0 auto;
-    /* background-color: orangered; */
+    display: flex;
+    align-items: center;
   }
 
   .header {
     display: flex;
     justify-content: space-between;
+    width: 100vw;
   }
 
   .logo {
-    /* background-color: green; */
-    color: blue;
-    align-self: center;
-    text-decoration: none;
-    font-style: italic;
+    display: flex;
+  }
+
+  .logo img {
+    width: 10rem;
+    display: block;
   }
 
   .nav-btn {
     border: 0;
     background: transparent;
-    font-size: 25px;
-    /* color: var(--primaryColor); */
-    color: blue;
+    font-size: 3rem;
+    color: var(--primaryColor);
     cursor: pointer;
   }
 
   .nav-links {
     display: none;
+    font-weight: 400;
   }
 
   @media (min-width: 992px) {
@@ -84,17 +94,33 @@ const NavContainer = styled.div`
     }
 
     .nav-links {
-      display: block;
+      display: flex;
       /* background-color: blueviolet; */
+      list-style: none;
+      text-transform: capitalize !important;
     }
 
-    .nav-link {
+    .nav-link a {
       text-decoration: none;
       font-size: 20px;
+      /* color: var(--primaryColor); */
+      transition: all 0.2s;
     }
 
     .nav-link:not(:first-child) {
       margin-left: 30px;
+    }
+
+    .nav-link a:hover {
+      color: var(--white);
+    }
+
+    .active-link {
+      color: var(--white);
+    }
+
+    .link {
+      color: var(--primaryColor);
     }
   }
 `;
