@@ -42,11 +42,9 @@ function Navbar() {
 }
 
 const NavContainer = styled.div`
-  /* background-color: blue; */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 0;
 
   .nav-center {
     width: 90vw;
@@ -67,7 +65,6 @@ const NavContainer = styled.div`
 
   .logo img {
     width: 10rem;
-    display: block;
   }
 
   .nav-btn {
@@ -95,7 +92,6 @@ const NavContainer = styled.div`
 
     .nav-links {
       display: flex;
-      /* background-color: blueviolet; */
       list-style: none;
       text-transform: capitalize !important;
     }
@@ -103,7 +99,6 @@ const NavContainer = styled.div`
     .nav-link a {
       text-decoration: none;
       font-size: 20px;
-      /* color: var(--primaryColor); */
       transition: all 0.2s;
     }
 
