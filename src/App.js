@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import styled from "styled-components";
 
 import { HomePage, AboutPage, ContactPage, GalleryPage } from "./Pages";
 import { Navbar, Sidebar, Footer } from "./Components";
@@ -28,5 +29,9 @@ function App() {
     </>
   );
 }
+
+const Wrapper = styled.div`
+  /* position: relative; */
+`;
 
 export default App;

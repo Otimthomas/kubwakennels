@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { RiFacebookLine, RiTwitterLine } from "react-icons/ri";
 import { BsPinMapFill, BsPhone } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
+import Logo from "../assets/logo.png";
 
 import FooterTitle from "./FooterTitle";
 
@@ -10,6 +11,9 @@ function Footer() {
   return (
     <Wrapper>
       <div className="footer__container">
+        <div className="logo">
+          <img src={Logo} alt="" />
+        </div>
         <div className="footer-contact">
           <FooterTitle title="Reach out to us" />
           <div className="contacts">
@@ -86,6 +90,23 @@ const Wrapper = styled.footer`
   grid-template-columns: 1fr;
   grid-template-rows: min-content 1fr;
   color: var(--white);
+
+  z-index: 100;
+
+  position: relative;
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+  }
+
+  .logo img {
+    width: 10rem;
+    opacity: 0.5;
+  }
 
   h3 {
     text-align: center;
@@ -195,6 +216,8 @@ const Wrapper = styled.footer`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    cursor: pointer;
   }
 
   .facebook:hover,

@@ -8,9 +8,27 @@ import Logo from "../assets/logo.png";
 
 function Navbar() {
   const { toggleSidebar } = useAppContext();
+  const [navbar, setNavbar] = React.useState(false);
+
+  const changeBackground = () => {
+    console.log(window.scrollY);
+    if (window.scrollY >= 66) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  React.useEffect(() => {
+    changeBackground();
+    console.log(navbar);
+    // adding the event when scroll change Logo
+    window.addEventListener("scroll", changeBackground);
+  });
+
   return (
     <NavContainer>
-      <div className="nav-center">
+      <div className={navbar ? "blue nav-center" : "nav-center"}>
         <div className="header">
           <Link to="/" className="logo">
             <img src={Logo} alt="" />
@@ -46,11 +64,28 @@ const NavContainer = styled.div`
   justify-content: center;
   align-items: center;
 
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  width: 100%;
+
+  .blue {
+    background-color: var(--tertiaryDarkColor);
+    opacity: 0.95;
+    padding: 0 5vw !important;
+    & .logo img {
+      width: 8rem;
+    }
+  }
+
   .nav-center {
-    width: 90vw;
+    width: 100%;
+    padding: 0 2.5vw;
     margin: 0 auto;
     display: flex;
     align-items: center;
+    transition: all 0.3s;
   }
 
   .header {

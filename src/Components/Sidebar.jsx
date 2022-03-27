@@ -48,6 +48,8 @@ const SidebarWrapper = styled.div`
   justify-content: center;
   align-items: center;
 
+  z-index: 1000;
+
   .sidebar {
     position: fixed;
     top: 0;
@@ -93,6 +95,7 @@ const SidebarWrapper = styled.div`
     text-align: center;
     display: flex;
     flex-direction: column;
+    list-style: none;
   }
 
   .nav-link {
