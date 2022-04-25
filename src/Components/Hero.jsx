@@ -25,15 +25,12 @@ const Wrapper = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* background-position-y: -10rem; */
-  /* background-position-x: -10rem; */
   min-width: 100%;
   height: 95vh;
   font-size: 4rem;
 
   .hero-center {
     width: max-content;
-    /* background-color: blue; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -45,7 +42,6 @@ const Wrapper = styled.div`
     font-size: 4.5rem;
     color: var(--white);
     line-height: 1;
-    /* margin-bottom: 0; */
 
     & span {
       color: var(--primaryColor);
@@ -94,7 +90,6 @@ const Wrapper = styled.div`
 
     .sub-heading {
       font-size: 2.5rem;
-      /* margin-top: 1rem; */
     }
   }
 

@@ -1,6 +1,7 @@
 :root {
   --primaryColor: #f2c430;
   --secondaryColor: #837446;
+  --secondaryColorLight: rgb(131, 116, 70, 0.75);
   --tertiaryColor: #474337;
   --tertiaryDarkColor: #343129;
   --white: #fff;

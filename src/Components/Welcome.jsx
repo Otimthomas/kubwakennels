@@ -53,6 +53,7 @@ const Wrapper = styled.div`
 
     .welcome__content {
       padding: 4rem;
+      /* border: 6px solid var(--primaryColor); */
     }
   }
 
@@ -64,7 +65,10 @@ const Wrapper = styled.div`
 
   .welcome__content {
     color: var(--white);
-    padding: 2.5rem;
+    padding: 2rem 1.5rem;
+
+    display: flex;
+    flex-direction: column;
 
     h3 {
       font-size: 4rem;
@@ -86,6 +90,24 @@ const Wrapper = styled.div`
     }
 
     .btn-welcome {
+      padding: 1.2rem 3.4rem;
+      background-color: var(--primaryColor);
+      outline: none;
+      border: none;
+      cursor: pointer;
+      letter-spacing: 0.2rem;
+      color: var(--white);
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      transition: all 0.3s;
+
+      &:hover {
+        color: var(--primaryColor);
+        background-color: var(--white);
+      }
+    }
+
+    /* .btn-welcome {
       background-color: var(--primaryColor);
       border: 2px solid var(--primaryColor);
       padding: 1.5rem 2rem;
@@ -100,7 +122,7 @@ const Wrapper = styled.div`
         color: var(--primaryColor);
         background-color: var(--white);
       }
-    }
+    } */
   }
   .welcome-image img {
     object-fit: cover;
@@ -108,6 +130,7 @@ const Wrapper = styled.div`
     width: 100%;
 
     display: flex;
+    border: 6px solid var(--white);
   }
 `;
 
