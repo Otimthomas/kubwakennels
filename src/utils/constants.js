@@ -21,4 +21,35 @@ const links = [
   },
 ];
 
-export { links };
+const FeaturedDogs = [
+  {
+    id: 1,
+    imgUrl: "images/kubwa_1.png",
+    name: "malkia",
+    sire: "baron",
+    dam: "Athena",
+  },
+  {
+    id: 2,
+    imgUrl: "images/kubwa_1.png",
+    name: "Illijada ",
+    sire: "VA7 Tell",
+    dam: "Karmar",
+  },
+  {
+    id: 3,
+    imgUrl: "images/kubwa_1.png",
+    name: "Ashura Kubwa",
+    sire: "Burli",
+    dam: "Cleo",
+  },
+  {
+    id: 4,
+    imgUrl: "images/kubwa_1.png",
+    name: "Gemma",
+    sire: "Burli",
+    dam: "Fuega",
+  },
+];
+
+export { links, FeaturedDogs };

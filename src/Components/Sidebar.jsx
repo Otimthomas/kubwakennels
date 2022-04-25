@@ -7,9 +7,7 @@ import { useAppContext } from "../context/context";
 import Logo from "../assets/logo.png";
 
 function Sidebar() {
-  // const sidebarOpen = true;
-  const { toggleSidebar, sidebarOpen, closeSidebar } = useAppContext();
-  console.log(sidebarOpen);
+  const { sidebarOpen, closeSidebar } = useAppContext();
   return (
     <SidebarWrapper>
       <aside className={`${sidebarOpen ? "show-sidebar sidebar" : "sidebar"}`}>
