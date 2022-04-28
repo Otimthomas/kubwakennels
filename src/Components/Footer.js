@@ -5,7 +5,7 @@ import { BsPinMapFill, BsPhone } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import Logo from "../assets/logo.png";
 
-import FooterTitle from "./FooterTitle";
+import Title from "./Title";
 
 function Footer() {
   return (
@@ -15,7 +15,7 @@ function Footer() {
           <img src={Logo} alt="" />
         </div>
         <div className="footer-contact">
-          <FooterTitle title="Reach out to us" />
+          <Title title="Reach out to us" />
           <div className="contacts">
             <section>
               <div className="icon">
@@ -38,11 +38,12 @@ function Footer() {
           </div>
         </div>
         <div className="footer-social">
-          <FooterTitle title="our social networks" />
+          <Title title="our social networks" />
           <section>
             <a
               href="https://www.facebook.com/"
               target="_blank"
+              rel="noreferrer"
               className="facebook"
             >
               <RiFacebookLine />
@@ -50,6 +51,7 @@ function Footer() {
             <a
               href="https://www.twitter.com/"
               target="_blank"
+              rel="noreferrer"
               className="twitter"
             >
               <RiTwitterLine />
@@ -57,7 +59,7 @@ function Footer() {
           </section>
         </div>
         <div className="footer-about">
-          <FooterTitle title="About us" />
+          <Title title="About us" />
           <section>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
