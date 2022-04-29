@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import styled from "styled-components";
 
 import { HomePage, AboutPage, ContactPage, GalleryPage } from "./Pages";
 import { Navbar, Sidebar, Footer } from "./Components";
@@ -15,23 +14,11 @@ function App() {
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/about" element={<AboutPage />}></Route>
         <Route path="/contact" element={<ContactPage />}></Route>
-        {/* <Route path="/db" element={<DatabasePage />}></Route> */}
         <Route path="/gallery" element={<GalleryPage />}></Route>
-        {/* <Route
-          path="/facebook"
-          element={() => {
-            window.location.href = "https://www.facebook.com/";
-            return null;
-          }}
-        /> */}
       </Routes>
       <Footer />
     </>
   );
 }
-
-const Wrapper = styled.div`
-  /* position: relative; */
-`;
 
 export default App;

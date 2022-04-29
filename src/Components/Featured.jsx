@@ -6,7 +6,7 @@ import { FeaturedDogs } from "../utils/constants";
 function Featured() {
   return (
     <Wrapper>
-      <h3>Some of our females</h3>
+      <h3>our featured females</h3>
       <div className="featured__cards">
         {FeaturedDogs.map((item) => {
           return <FeaturedCard key={item.id} {...item} />;

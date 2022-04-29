@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function FooterTitle({ title }) {
+function Title({ title }) {
   return (
     <Wrapper>
       <h3>{title}</h3>
@@ -35,4 +35,4 @@ const Wrapper = styled.div`
   }
 `;
 
-export default FooterTitle;
+export default Title;
