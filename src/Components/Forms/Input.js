@@ -1,5 +1,6 @@
 import React from "react";
 import { Field, ErrorMessage } from "formik";
+import TextError from "./TextError";
 
 const Input = ({ label, name, ...rest }) => {
   return (
@@ -10,3 +11,5 @@ const Input = ({ label, name, ...rest }) => {
     </div>
   );
 };
+
+export default Input;

@@ -5,7 +5,7 @@ import Textarea from "./Textarea";
 const FormikControl = (props) => {
   const { control, ...rest } = props;
 
-  switch (contorl) {
+  switch (control) {
     case "input":
       return <Input {...rest} />;
     case "textarea":

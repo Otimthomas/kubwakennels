@@ -6,12 +6,16 @@ import FormikControl from "./FormikControl";
 const FormikContainer = () => {
   const initialValues = {
     // Enter the intial values of the form here
+    email: "",
+    description: "",
   };
 
   // The validation Schema for the form goes below using Yup
   const validationSchema = Yup.object({
     // Enter the validation of each field below
     // for example -> email: Yup.string().required('Required');
+    email: Yup.string().email().required("Required"),
+    description: Yup.string().required("Required"),
   });
 
   // The onsubmit function has the values of the form
@@ -44,3 +48,5 @@ const FormikContainer = () => {
     </Formik>
   );
 };
+
+export default FormikContainer;
