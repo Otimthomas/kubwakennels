@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 
-import { HomePage, AboutPage, ContactPage, GalleryPage } from "./Pages";
+import { HomePage, AboutPage, ContactPage, Females, Males } from "./Pages";
 import { Navbar, Sidebar, Footer } from "./Components";
 
 import "./App.css";
@@ -14,7 +14,8 @@ function App() {
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/about" element={<AboutPage />}></Route>
         <Route path="/contact" element={<ContactPage />}></Route>
-        <Route path="/gallery" element={<GalleryPage />}></Route>
+        <Route path="/our-males" element={<Males />}></Route>
+        <Route path="/our-females" element={<Females />}></Route>
       </Routes>
       <Footer />
     </>

@@ -33,15 +33,9 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* height: 100vh; */
-  /* padding: 0 8rem; */
 
   .carousel__item {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
     height: 25rem;
-    /* width: 100%; */
     color: #fff;
     margin: 15px;
     font-size: 4rem;

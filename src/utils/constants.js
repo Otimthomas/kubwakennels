@@ -6,13 +6,18 @@ const links = [
   },
   {
     id: 2,
-    text: "about",
-    path: "/about",
+    text: "about us",
+    path: "/about-us",
   },
   {
     id: 3,
-    text: "gallery",
-    path: "/gallery",
+    text: "Our Males",
+    path: "/our-males",
+  },
+  {
+    id: 3,
+    text: "Our females",
+    path: "/our-females",
   },
   {
     id: 4,

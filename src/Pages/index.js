@@ -1,6 +1,7 @@
 import AboutPage from "./AboutPage";
 import ContactPage from "./ContactPage";
-import GalleryPage from "./GalleryPage";
 import HomePage from "./HomePage";
+import Females from "./Females";
+import Males from "./Males";
 
-export { AboutPage, ContactPage, GalleryPage, HomePage };
+export { AboutPage, ContactPage, HomePage, Females, Males };

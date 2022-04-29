@@ -78,7 +78,7 @@ const NavContainer = styled.div`
 
   .nav-center {
     width: 100%;
-    padding: 0 2.5vw;
+    padding: 0 4rem;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -116,6 +116,7 @@ const NavContainer = styled.div`
     .nav-center {
       display: flex;
       justify-content: space-between;
+      padding: 0 8rem;
     }
 
     .nav-btn {
@@ -129,8 +130,10 @@ const NavContainer = styled.div`
     }
 
     .nav-link a {
+      display: flex;
+      min-width: max-content;
       text-decoration: none;
-      font-size: 20px;
+      font-size: 2rem;
       transition: all 0.2s;
     }
 
