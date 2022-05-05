@@ -3,19 +3,21 @@ import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import FormikControl from "./FormikControl";
 
-const FormikContainer = () => {
+const ContactForm = () => {
   const initialValues = {
     // Enter the intial values of the form here
+    name: "",
     email: "",
-    description: "",
+    message: "",
   };
 
   // The validation Schema for the form goes below using Yup
   const validationSchema = Yup.object({
     // Enter the validation of each field below
     // for example -> email: Yup.string().required('Required');
-    email: Yup.string().email().required("Required"),
-    description: Yup.string().required("Required"),
+    name: Yup.string().required("Name is required"),
+    email: Yup.string().email().required("Email is required"),
+    message: Yup.string().required("Message is required"),
   });
 
   // The onsubmit function has the values of the form
@@ -27,26 +29,29 @@ const FormikContainer = () => {
       validationSchema={validationSchema}
       onSubmit={onSubmit}
     >
-      {(formik) => (
+      {() => (
         <Form>
           {/* An input example */}
           <FormikControl
             control="input"
+            type="text"
+            label="Your Name"
+            name="name"
+            autoFocus
+          />
+          <FormikControl
+            control="input"
             type="email"
-            label="Email"
+            label="Mail"
             name="email"
           />
           {/* A textarea example */}
-          <FormikControl
-            control="textarea"
-            label="description"
-            name="description"
-          />
-          <button type="submit">Submit</button>
+          <FormikControl control="textarea" label="Message" name="message" />
+          <button type="submit">Send</button>
         </Form>
       )}
     </Formik>
   );
 };
 
-export default FormikContainer;
+export default ContactForm;

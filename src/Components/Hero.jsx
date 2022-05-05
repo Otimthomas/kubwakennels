@@ -25,6 +25,7 @@ const Wrapper = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position-x: -25rem;
   min-width: 100%;
   height: 95vh;
   font-size: 4rem;
@@ -83,6 +84,8 @@ const Wrapper = styled.div`
   }
 
   @media (min-width: 768px) {
+    background-position-x: -2rem;
+
     .heading {
       font-size: 5rem !important;
       letter-spacing: 0.2rem;
@@ -94,6 +97,8 @@ const Wrapper = styled.div`
   }
 
   @media (min-width: 992px) {
+    background-position-x: 0rem;
+
     .heading {
       font-size: 5.5rem !important;
       letter-spacing: 0.3rem;

@@ -7,7 +7,7 @@ import FeaturedCard from "./FeaturedCard";
 import Foundation from "./Foundation";
 import Hero from "./Hero";
 import Welcome from "./Welcome";
-import FormikContainer from "./Forms/FormikContainer";
+import FormikContainer from "./Forms/ContactForm";
 import ImageCarousel from "./ImageCarousel";
 
 export {
