@@ -16,7 +16,9 @@ const ContactForm = () => {
     // Enter the validation of each field below
     // for example -> email: Yup.string().required('Required');
     name: Yup.string().required("Name is required"),
-    email: Yup.string().email().required("Email is required"),
+    email: Yup.string()
+      .email("Email should be valid")
+      .required("Email is required"),
     message: Yup.string().required("Message is required"),
   });
 
