@@ -127,11 +127,9 @@ const Wrapper = styled.div`
       color: var(--secondaryColor);
     }
 
-    textarea::focus {
-      border: none;
-    }
-
-    input:focus {
+    input:focus,
+    textarea:focus {
+      outline: none;
       border: 1px solid var(--primaryColor);
     }
 
