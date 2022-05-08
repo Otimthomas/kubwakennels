@@ -4,37 +4,41 @@ import { BsTelephone } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { FiMapPin } from "react-icons/fi";
 import styled from "styled-components";
+import Hero from "../Components/Hero";
 
 const ContactPage = () => {
   return (
-    <Wrapper>
-      <div className="contact__left">
-        {/* Heading and sub-heading */}
-        <h3>Get a Quote</h3>
-        <p>
-          Fill up the form and our team will get back to you within 24 hours
-        </p>
+    <>
+      <Hero title="contact us" />
+      <Wrapper>
+        <div className="contact__left">
+          {/* Heading and sub-heading */}
+          <h3>Get a Quote</h3>
+          <p>
+            Fill up the form and our team will get back to you within 24 hours
+          </p>
 
-        {/* icons and address */}
-        <div className="contact__info">
-          <div>
-            <BsTelephone />
-            <p>+25670 368 9895</p>
-          </div>
-          <div>
-            <HiOutlineMail />
-            <p>kubwakennels@gmail.com</p>
-          </div>
-          <div>
-            <FiMapPin />
-            <p>Jogo, Mukono</p>
+          {/* icons and address */}
+          <div className="contact__info">
+            <div>
+              <BsTelephone />
+              <p>+25670 368 9895</p>
+            </div>
+            <div>
+              <HiOutlineMail />
+              <p>kubwakennels@gmail.com</p>
+            </div>
+            <div>
+              <FiMapPin />
+              <p>Jogo, Mukono</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="contact__right">
-        <ContactForm />
-      </div>
-    </Wrapper>
+        <div className="contact__right">
+          <ContactForm />
+        </div>
+      </Wrapper>
+    </>
   );
 };
 
@@ -88,7 +92,7 @@ const Wrapper = styled.div`
     background-color: var(--primaryColor-light);
     padding: 2rem;
     margin-top: 2rem;
-
+    border: 2px solid var(--primaryColor);
     font-size: 1.5rem;
     color: var(--tertiaryColor);
 
@@ -145,7 +149,7 @@ const Wrapper = styled.div`
     padding: 1.5rem 6rem;
     background-color: var(--primaryColor);
     outline: none;
-    border: none;
+    border: 2px solid var(--white);
     cursor: pointer;
     letter-spacing: 0.2rem;
     color: var(--white);
@@ -155,6 +159,7 @@ const Wrapper = styled.div`
 
     &:hover {
       color: var(--primaryColor);
+
       background-color: var(--white);
     }
   }
