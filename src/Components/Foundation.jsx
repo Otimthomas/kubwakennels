@@ -86,7 +86,7 @@ const Wrapper = styled.section`
     }
 
     .btn-foundation {
-      padding: 1.2rem 3.4rem;
+      padding: 2rem 3.5rem;
       background-color: var(--primaryColor);
       outline: none;
       border: none;

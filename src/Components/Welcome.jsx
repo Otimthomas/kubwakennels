@@ -37,9 +37,14 @@ const Welcome = () => {
 const Wrapper = styled.div`
   font-size: 2rem;
   padding: 2rem 4rem;
+  margin: 4rem 0;
 
   @media (min-width: 768px) {
     padding: 2rem 6rem !important;
+
+    .btn-welcome {
+      align-self: start;
+    }
   }
 
   @media (min-width: 992px) {
@@ -90,7 +95,7 @@ const Wrapper = styled.div`
     }
 
     .btn-welcome {
-      padding: 1.2rem 3.4rem;
+      padding: 2rem 3.5rem;
       background-color: var(--primaryColor);
       outline: none;
       border: none;
@@ -100,29 +105,14 @@ const Wrapper = styled.div`
       font-size: 1.5rem;
       text-transform: uppercase;
       transition: all 0.3s;
+      font-weight: bold;
+      /* align-self: start; */
 
       &:hover {
         color: var(--primaryColor);
         background-color: var(--white);
       }
     }
-
-    /* .btn-welcome {
-      background-color: var(--primaryColor);
-      border: 2px solid var(--primaryColor);
-      padding: 1.5rem 2rem;
-      color: var(--white);
-      font-size: 1.5rem;
-      font-weight: bold;
-      letter-spacing: 0.2rem;
-      cursor: pointer;
-      transition: all 0.2s;
-
-      &:hover {
-        color: var(--primaryColor);
-        background-color: var(--white);
-      }
-    } */
   }
   .welcome-image img {
     object-fit: cover;
@@ -135,59 +125,3 @@ const Wrapper = styled.div`
 `;
 
 export default Welcome;
-
-/* .welcome-center {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: var(--tertiaryColor);
-
-    .welcome__content {
-      color: var(--white);
-      padding: 4rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      h3 {
-        font-size: 6rem;
-        line-height: 1.2;
-        margin-bottom: 2rem;
-
-        span {
-          color: var(--primaryColor);
-        }
-      }
-
-      p {
-        font-size: 1.5rem;
-        line-height: 1.7;
-      }
-      & > p {
-        margin-bottom: 2rem;
-      }
-
-      .btn-welcome {
-        align-self: start;
-        background-color: var(--primaryColor);
-        border: 2px solid var(--primaryColor);
-        padding: 1.8rem 3rem;
-        color: var(--white);
-        font-size: 2rem;
-        font-weight: bold;
-        letter-spacing: 0.2rem;
-        cursor: pointer;
-        transition: all 0.2s;
-
-        &:hover {
-          color: var(--primaryColor);
-          background-color: var(--white);
-        }
-      }
-    }
-
-    .welcome-image img {
-      object-fit: cover;
-      height: 100%;
-      width: 100%;
-    }
-  } */
