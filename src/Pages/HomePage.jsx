@@ -1,6 +1,6 @@
 import React from "react";
 import Foundation from "../Components/Foundation";
-import Hero from "../Components/Hero";
+import HomeHero from "../Components/HomeHero";
 import Welcome from "../Components/Welcome";
 import Featured from "../Components/Featured";
 import ImageCarousel from "../Components/ImageCarousel";
@@ -8,7 +8,7 @@ import ImageCarousel from "../Components/ImageCarousel";
 const HomePage = () => {
   return (
     <div>
-      <Hero />
+      <HomeHero />
       <Welcome />
       <Foundation />
       <Featured />
