@@ -9,9 +9,9 @@ import Hero from "../Components/Hero";
 const ContactPage = () => {
   return (
     <>
-      <Hero title="contact us" />
+      <Hero title='contact us' />
       <Wrapper>
-        <div className="contact__left">
+        <div className='contact__left'>
           {/* Heading and sub-heading */}
           <h3>Get a Quote</h3>
           <p>
@@ -19,7 +19,7 @@ const ContactPage = () => {
           </p>
 
           {/* icons and address */}
-          <div className="contact__info">
+          <div className='contact__info'>
             <div>
               <BsTelephone />
               <p>+25670 368 9895</p>
@@ -34,7 +34,7 @@ const ContactPage = () => {
             </div>
           </div>
         </div>
-        <div className="contact__right">
+        <div className='contact__right'>
           <ContactForm />
         </div>
       </Wrapper>
@@ -76,8 +76,11 @@ const Wrapper = styled.div`
 
     .contact__info svg {
       font-size: 3rem;
-      color: var(--primaryColor);
+      color: var(--white);
       margin-right: 2rem;
+      background-color: var(--primaryColor);
+      padding: 0.5rem;
+      border-radius: 50%;
     }
 
     .contact__info div p {
