@@ -1,25 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 import CarouselSlide from "./Carousel/CarouselSlide";
-import Title from "./Title";
 import cleo from "../assets/cleo.png";
 
 const ImageCarousel = () => {
   return (
     <Wrapper>
-      <Title title="Gallery" />
       <CarouselSlide>
-        <div className="carousel__item">
-          <img src={cleo} alt="cleo" className="carousel__img" />
+        <div className='carousel__item'>
+          <img src={cleo} alt='cleo' className='carousel__img' />
         </div>
-        <div className="carousel__item">
-          <img src={cleo} alt="cleo" className="carousel__img" />
+        <div className='carousel__item'>
+          <img src={cleo} alt='cleo' className='carousel__img' />
         </div>
-        <div className="carousel__item">
-          <img src={cleo} alt="cleo" className="carousel__img" />
+        <div className='carousel__item'>
+          <img src={cleo} alt='cleo' className='carousel__img' />
         </div>
-        <div className="carousel__item">
-          <img src={cleo} alt="cleo" className="carousel__img" />
+        <div className='carousel__item'>
+          <img src={cleo} alt='cleo' className='carousel__img' />
         </div>
       </CarouselSlide>
     </Wrapper>
@@ -35,7 +33,6 @@ const Wrapper = styled.div`
   }
 
   .carousel__img {
-    /* display: block; */
     width: 100%;
     object-fit: cover;
   }

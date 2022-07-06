@@ -48,9 +48,9 @@ const Wrapper = styled.div`
     box-shadow: 0.2rem 1rem 1.4rem;
     transition: all 0.2s;
 
-    /* &:hover {
-      transform: scale(1.1);
-    } */
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 
   .image__container img {
@@ -62,14 +62,14 @@ const Wrapper = styled.div`
   }
 
   .dog__details {
-    background-color: var(--primaryColor-light);
+    background-color: var(--primaryColorLight);
     padding: 2rem;
-    box-shadow: 0.2rem 1rem 1.4rem white;
+    box-shadow: 0.2rem 0.3rem 0.8rem var(--white);
     transition: all 0.3s;
 
-    /* &:hover {
-      transform: scale(0.8);
-    } */
+    &:hover {
+      transform: scale(1.02);
+    }
 
     p {
       font-size: 2rem;
@@ -79,8 +79,10 @@ const Wrapper = styled.div`
       font-style: italic;
 
       span {
-        font-weight: bold;
+        font-weight: normal;
         font-style: normal;
+        color: var(--white);
+        text-shadow: 2px 0 20px;
       }
     }
   }
@@ -89,9 +91,9 @@ const Wrapper = styled.div`
     box-shadow: 0.2rem 1rem 1.4rem;
     transition: all 0.2s;
 
-    /* &:hover {
-      transform: scale(1.1);
-    } */
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 
   .images__container h3 {

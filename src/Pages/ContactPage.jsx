@@ -48,7 +48,14 @@ const Wrapper = styled.div`
   background-position: center;
   background-size: cover;
 
-  padding: 10rem 4rem 4rem 4rem;
+  padding: 10rem 8rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (max-width: 992px) {
+    display: block;
+  }
 
   .contact__left {
     h3 {
@@ -75,12 +82,12 @@ const Wrapper = styled.div`
     }
 
     .contact__info svg {
-      font-size: 3rem;
+      font-size: 6rem;
       color: var(--white);
       margin-right: 2rem;
       background-color: var(--primaryColor);
-      padding: 0.5rem;
-      border-radius: 50%;
+      padding: 0.8rem;
+      border-radius: 2rem;
     }
 
     .contact__info div p {
@@ -92,7 +99,7 @@ const Wrapper = styled.div`
   }
 
   .contact__right {
-    background-color: var(--primaryColor-light);
+    background-color: var(--primaryColorLight) !important;
     padding: 2rem;
     margin-top: 2rem;
     border: 2px solid var(--primaryColor);
@@ -142,7 +149,7 @@ const Wrapper = styled.div`
 
     .error {
       color: red;
-      font-weight: 600;
+      font-weight: normal;
       padding-top: 0.5rem;
     }
   }
