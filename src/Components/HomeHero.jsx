@@ -72,6 +72,7 @@ const Wrapper = styled.div`
 
     .sub-heading {
       font-size: 2rem;
+      text-transform: capitalize;
     }
 
     .hero-btn {

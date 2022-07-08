@@ -62,13 +62,13 @@ const Wrapper = styled.div`
   }
 
   .dog__details {
-    background-color: var(--primaryColorLight);
+    background-color: var(--primaryColor);
     padding: 2rem;
-    box-shadow: 0.2rem 0.3rem 0.8rem var(--white);
     transition: all 0.3s;
 
     &:hover {
       transform: scale(1.02);
+      box-shadow: 0.2rem 0.3rem 0.8rem var(--white);
     }
 
     p {
@@ -82,8 +82,11 @@ const Wrapper = styled.div`
         font-weight: normal;
         font-style: normal;
         color: var(--white);
-        text-shadow: 2px 0 20px;
       }
+    }
+
+    &:hover p span {
+      text-shadow: 2px 0 20px;
     }
   }
 

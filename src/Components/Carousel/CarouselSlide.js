@@ -39,8 +39,9 @@ const Wrapper = styled.div`
 
   .carousel__item img {
     box-shadow: 0.1rem 0.5rem 1rem var(--tertiaryDarkColor);
-    border-radius: 20px;
+    border-radius: 10px;
     display: flex;
+    height: 100%;
   }
 
   .controls-wrapper {

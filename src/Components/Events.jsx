@@ -49,7 +49,6 @@ const Wrapper = styled.div`
   @media (min-width: 992px) {
     .events {
       padding: 2rem 10rem !important;
-      background-color: blue;
     }
 
     h3 {
@@ -60,7 +59,6 @@ const Wrapper = styled.div`
   @media (min-width: 768px) {
     .events {
       padding: 2rem 10rem !important;
-      background-color: blue;
     }
 
     h3 {
@@ -97,7 +95,7 @@ const Wrapper = styled.div`
       display: grid;
       grid-template-rows: 1fr 1fr;
 
-      padding: 1rem;
+      padding: 4rem;
       max-width: 100%;
       font-size: 1.6rem;
       color: white;
