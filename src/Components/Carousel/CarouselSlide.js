@@ -12,15 +12,13 @@ const breakPoints = [
 const CarouselSlide = ({ children }) => {
   return (
     <Wrapper>
-      {/* <hr className="seperator" /> */}
-      <div className="carousel-wrapper">
+      <div className='carousel-wrapper'>
         <Carousel
           breakPoints={breakPoints}
           enableAutoPlay
           autoPlaySpeed={2000}
           enableSwipe
-          enableMouseSwipe
-        >
+          enableMouseSwipe>
           {children}
         </Carousel>
       </div>
@@ -29,7 +27,6 @@ const CarouselSlide = ({ children }) => {
 };
 
 const Wrapper = styled.div`
-  font-family: sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,20 +35,14 @@ const Wrapper = styled.div`
     height: 25rem;
     color: #fff;
     margin: 15px;
-    font-size: 4rem;
   }
 
   .carousel__item img {
-    box-shadow: 1px 10px 16px black;
-    border: 3px solid var(--tertiaryColor);
-    /* border-radius: 10px; */
-    width: 30rem;
+    box-shadow: 0.1rem 0.5rem 1rem var(--tertiaryDarkColor);
+    border-radius: 10px;
     display: flex;
+    height: 100%;
   }
-
-  /* .seperator {
-    width: 100%;
-  } */
 
   .controls-wrapper {
     width: 100%;
@@ -64,8 +55,10 @@ const Wrapper = styled.div`
 
   .rec-arrow {
     background: transparent !important;
-    color: var(--primaryColor);
+    color: var(--white);
     font-size: 3.5rem;
+    border: 2px solid var(--primaryColor);
+    /* border: none !important; */
   }
 
   .rec-dot_active {

@@ -1,6 +1,6 @@
 :root {
   --primaryColor: #f2c430;
-  --primaryColor-light: #f2c53180;
+  --primaryColorLight: #f2c53180;
   --secondaryColor: #837446;
   --secondaryColorLight: #837446bf;
   --tertiaryColor: #474337;
@@ -29,4 +29,10 @@ body {
   line-height: 1.6;
   font-weight: 300;
   background-color: rgb(129, 114, 70, 0.75);
+}
+
+.img_overlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
 }

@@ -17,11 +17,11 @@ function App() {
       <Navbar />
       <Sidebar />
       <Routes>
-        <Route path="/" element={<HomePage />}></Route>
-        <Route path="/about" element={<AboutPage />}></Route>
-        <Route path="/contact" element={<ContactPage />}></Route>
-        <Route path="/our-males" element={<MalesPage />}></Route>
-        <Route path="/our-females" element={<FemalesPage />}></Route>
+        <Route path='/' element={<HomePage />}></Route>
+        <Route path='/about-us' element={<AboutPage />}></Route>
+        <Route path='/contact' element={<ContactPage />}></Route>
+        <Route path='/our-males' element={<MalesPage />}></Route>
+        <Route path='/our-females' element={<FemalesPage />}></Route>
       </Routes>
       <Footer />
     </>

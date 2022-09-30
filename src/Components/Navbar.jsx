@@ -26,25 +26,24 @@ function Navbar() {
   return (
     <NavContainer>
       <div className={navbar ? "blue nav-center" : "nav-center"}>
-        <div className="header">
-          <Link to="/" className="logo">
-            <img src={Logo} alt="" />
+        <div className='header'>
+          <Link to='/' className='logo'>
+            <img src={Logo} alt='' />
           </Link>
           {/* burger icon goes here */}
-          <button className="nav-btn" onClick={toggleSidebar}>
+          <button className='nav-btn' onClick={toggleSidebar}>
             <FaBars />
           </button>
         </div>
-        <ul className="nav-links">
+        <ul className='nav-links'>
           {links.map((link) => {
             return (
-              <li key={link.id} className="nav-link">
+              <li key={link.id} className='nav-link'>
                 <NavLink
                   className={({ isActive }) =>
                     isActive ? "active-link" : "link"
                   }
-                  to={link.path}
-                >
+                  to={link.path}>
                   {link.text}
                 </NavLink>
               </li>
@@ -110,6 +109,16 @@ const NavContainer = styled.div`
   .nav-links {
     display: none;
     font-weight: 400;
+  }
+
+  @media (max-width: 576px) {
+    .logo img {
+      width: 8rem !important;
+    }
+
+    .nav-center {
+      padding: 0 2rem;
+    }
   }
 
   @media (min-width: 992px) {

@@ -4,14 +4,14 @@ import Logo from "../assets/kubwa_1.png";
 const Foundation = () => {
   return (
     <Wrapper>
-      <div className="foundation__image">
-        <img src={Logo} alt="Cleo" />
+      <div className='foundation__image'>
+        <img src={Logo} alt='Cleo' />
       </div>
-      <div className="foundation__content">
+      <div className='foundation__content'>
         <h3>
           Our foundation dog <span>- Amina Cleo</span>
         </h3>
-        <div className="foundation__content-p">
+        <div className='foundation__content-p'>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore,
             nesciunt amet? Dolore soluta eius aliquam, harum quae tempora
@@ -24,7 +24,7 @@ const Foundation = () => {
             magnam necessitatibus quasi? Qui?
           </p>
         </div>
-        <button className="btn-foundation">Read more</button>
+        <button className='btn-foundation'>Read more</button>
       </div>
     </Wrapper>
   );
@@ -58,7 +58,7 @@ const Wrapper = styled.section`
     height: 100%;
 
     display: flex;
-    border: 6px solid var(--primaryColor);
+    border: 2px solid var(--primaryColor);
   }
 
   .foundation__content {
@@ -71,8 +71,11 @@ const Wrapper = styled.section`
       color: var(--white);
       line-height: 1.2;
       padding-bottom: 1.5rem;
+      font-weight: normal;
+
       span {
         color: var(--primaryColor);
+        font-weight: bold;
       }
     }
 
@@ -86,7 +89,7 @@ const Wrapper = styled.section`
     }
 
     .btn-foundation {
-      padding: 2rem 3.5rem;
+      padding: 1.5rem 3.5rem;
       background-color: var(--primaryColor);
       outline: none;
       border: none;
@@ -94,7 +97,7 @@ const Wrapper = styled.section`
       color: var(--white);
       letter-spacing: 0.2rem;
       font-size: 1.5rem;
-      text-transform: uppercase;
+      text-transform: capitalize;
       transition: all 0.3s;
 
       &:hover {
